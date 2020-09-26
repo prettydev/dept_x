@@ -1,16 +1,16 @@
 import { GetStaticProps } from "next";
 
-import { Category } from "../interfaces";
-import { getAllCategories } from "../lib/categories";
-import Layout from "../components/UI/Layout";
-import CategoryContainer from "../components/CategoryContainer";
+import { Category } from "../../interfaces";
+import { getAllCategories } from "../../lib/categories";
+import Layout from "../../components/UI/Layout";
+import CategoryContainer from "../../components/CategoryContainer";
 
 type Props = {
   categories: Category[];
 };
 
-const LandingPage = ({ categories }: Props) => (
-  <Layout title="Home | DEPT_X">
+const ProductsPage = ({ categories }: Props) => (
+  <Layout title="All Products | DEPT_X">
     {categories.map((cat) => {
       if (cat.products?.length > 0 && !cat.children?.length) {
         return (
@@ -30,4 +30,4 @@ export const getStaticProps: GetStaticProps = async () => {
   return { props: { categories } };
 };
 
-export default LandingPage;
+export default ProductsPage;
