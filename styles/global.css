@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&&family=Arial&family=Helvetica&family=Roboto&display=swap');
+
+@import '~react-image-gallery/styles/css/image-gallery.css';
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+main {
+    height: 100%;
+}
+
+/* body::-webkit-scrollbar {
+    width: 0;
+} */
+
+#header {
+    grid-area: header;
+}
+
+#footer {
+    grid-area: footer;
+    margin-top: 2rem;
+}
+
+#navbar {
+    position: relative;
+    /* overflow: hidden; */
+    /* border-bottom: 2px lightgray solid; */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
+}
+
+#navbar.sticky {
+    position: fixed;
+    box-shadow: none;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 10;
+    border-bottom: 1px lightgray solid;
+}
+
+#main-content.paddingTop {
+    padding-top: 4rem;
+}
