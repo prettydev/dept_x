@@ -300,7 +300,7 @@ export const CarouselArea = styled.div`
           }
 
           h4 {
-            color: ${themeGet("colors.white", "#ffffff")};
+            color: ${themeGet("colors.gray", "#ffffff")};
             bottom: 10px;
           }
         }

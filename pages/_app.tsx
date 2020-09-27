@@ -11,8 +11,6 @@ import theme from "../components/UI/Theme";
 import "../styles/index.css";
 import "../styles/global.css";
 import "../assets/css/flaticon.css";
-import "@glidejs/glide/dist/css/glide.core.min.css";
-import "rc-drawer/assets/index.css";
 
 function App({ Component, pageProps }: AppProps) {
   return (

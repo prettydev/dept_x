@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 import RcDrawer from "rc-drawer";
+import "rc-drawer/assets/index.css";
 
 const Drawer = ({
   className,
@@ -21,7 +22,7 @@ const Drawer = ({
   }
 
   return (
-    <Fragment>
+    <>
       <RcDrawer
         open={open}
         onClose={toggleHandler}
@@ -50,7 +51,7 @@ const Drawer = ({
       >
         {drawerHandler}
       </div>
-    </Fragment>
+    </>
   );
 };
 

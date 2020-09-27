@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { themeGet } from "@styled-system/theme-get";
 
-import map from "../../assets/image/map.png";
+const map = require("../../assets/image/map.png");
 
 const FooterWrapper = styled.footer`
   width: 100%;

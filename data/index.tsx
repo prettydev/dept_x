@@ -19,33 +19,23 @@
 /* ------------------------------------ */
 export const menuData = [
   {
-    label: "Feature",
-    path: "#feature",
+    label: "HOME",
+    path: "#home",
     offset: "80",
   },
   {
-    label: "About",
-    path: "#aboutUs",
+    label: "ABOUT US",
+    path: "#about",
     offset: "80",
   },
   {
-    label: "Project",
-    path: "#project",
+    label: "ORDER INSTRUCTION",
+    path: "#order",
     offset: "80",
   },
   {
-    label: "Team",
-    path: "#team",
-    offset: "80",
-  },
-  {
-    label: "News",
-    path: "#news",
-    offset: "40",
-  },
-  {
-    label: "Testimonial",
-    path: "#testimonial",
+    label: "REGISTER",
+    path: "#register",
     offset: "80",
   },
 ];
@@ -53,9 +43,9 @@ export const menuData = [
 /* ------------------------------------ */
 // Banner section data
 /* ------------------------------------ */
-import slide1 from "../assets/image/slider/slide1.png";
-import slide2 from "../assets/image/slider/slide2.png";
-import slide3 from "../assets/image/slider/slide3.png";
+const slide1 = require("../assets/image/slider/slide1.png");
+const slide2 = require("../assets/image/slider/slide2.png");
+const slide3 = require("../assets/image/slider/slide3.png");
 
 export const bannerData = {
   discount: "25%",
