@@ -25,7 +25,7 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
   return (
     <NavbarWrapper {...navbarStyle}>
       <Container>
-        <Logo href="/" logoSrc={logo} title="DEPT_X" logoStyle={logoStyle} />
+        {/* <Logo href="/" logoSrc={logo} title="DEPT_X" logoStyle={logoStyle} /> */}
         <div style={{ display: "flex", alignItems: "center" }}>
           <Drawer
             width="420px"

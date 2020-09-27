@@ -30,6 +30,7 @@
         "rc-drawer": "^4.1.0",
         "react": "^16.13.1",
         "react-anchor-link-smooth-scroll": "^1.0.12",
+        "react-animated-slider": "^2.0.0",
         "react-awesome-button": "^6.5.1",
         "react-awesome-slider": "^4.1.0",
         "react-dom": "^16.13.1",

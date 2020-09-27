@@ -33,21 +33,10 @@ const BannerWrapper = styled.div`
 
 export const Container = styled.div`
   width: 100%;
-  max-width: 1580px;
   min-height: 100vh;
   margin: 0 auto;
-  padding: 0 20px;
   display: flex;
   align-items: center;
-  @media only screen and (max-width: 1600px) {
-    padding: 0 81px;
-  }
-  @media only screen and (max-width: 1360px) {
-    padding: 0 60px;
-  }
-  @media only screen and (max-width: 991px) {
-    padding: 0 30px;
-  }
   @media only screen and (max-width: 767px) {
     flex-direction: column;
   }

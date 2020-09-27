@@ -12,20 +12,17 @@ import {
 import { media } from "./media";
 import Startup from "../startup/startup";
 
-const Slider = withNavigationHandlers(AwesomeSlider);
-
-export default withNavigationContext(({ fullpage }) => {
+export default () => {
   const isFirstLoad = useRef(true);
-  const animation = fullpage.navigation.animation || `foldOutAnimation`;
+  const animation = `foldOutAnimation`;
 
   return (
-    <Slider
+    <AwesomeSlider
       startupScreen={<Startup />}
       startupDelay={275}
       animation={animation}
       className="awesome-slider"
       onTransitionEnd={() => {
-        // HANDLE THE PAGE ELEMENTS ANIMATION ON FIRST TRANSITION END
         if (isFirstLoad.current === true) {
           document.querySelector("body").classList.add("animated");
           document.querySelector("body").classList.add("visible");
@@ -34,4 +31,4 @@ export default withNavigationContext(({ fullpage }) => {
       media={media}
     />
   );
-});
+};
