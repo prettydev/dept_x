@@ -1,14 +1,13 @@
 import React from "react";
+import Drawer from "rc-drawer";
 import Sticky from "react-stickynode";
 import { ThemeProvider } from "styled-components";
 import { landingTheme } from "../theme";
-import { DrawerProvider } from "../contexts/DrawerContext";
-import Navbar from "../containers/Navbar";
+import { AppProvider } from "../contexts/AppContext";
 import Banner from "../containers/Banner";
 import Events from "../containers/Events";
 import Register from "../containers/Register";
 import AboutUs from "../containers/AboutUs";
-
 import { ResetCSS } from "../assets/css/style";
 
 import {
@@ -16,34 +15,37 @@ import {
   InteriorWrapper,
   ContentWrapper,
 } from "../containers/style";
-
-// import Layout from "../components/UI/Layout";
-// const LandingPage = (props) => <Layout title="Home | DEPT_X"></Layout>;
+import ScrollSpyMenu from "../components/ScrollSpyMenu";
+import { menuData } from "../data";
+import "rc-drawer/assets/index.css";
 
 const LandingPage = () => {
   return (
-    <ThemeProvider theme={landingTheme}>
-      <>
+    <AppProvider>
+      <ThemeProvider theme={landingTheme}>
         <ResetCSS />
         <GlobalStyle />
-        {/* Start writing your markup from here. */}
         <InteriorWrapper>
-          <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
-            <DrawerProvider>
-              <Navbar />
-            </DrawerProvider>
-          </Sticky>
+          {/* <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
+            <Navbar />
+          </Sticky> */}
+          <Drawer placement="right">
+            <ScrollSpyMenu
+              className=""
+              menuItems={menuData}
+              drawerClose={true}
+              offset={-100}
+            />
+          </Drawer>
           <ContentWrapper>
             <Banner />
             <AboutUs />
             <Events />
             <Register />
           </ContentWrapper>
-          {/* <Footer /> */}
         </InteriorWrapper>
-        {/* End of markup section. */}
-      </>
-    </ThemeProvider>
+      </ThemeProvider>
+    </AppProvider>
   );
 };
 

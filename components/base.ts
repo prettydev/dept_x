@@ -16,12 +16,12 @@ import {
   alignSelf,
   color,
   compose,
-} from 'styled-system';
+} from "styled-system";
 
-export const themed = key => props => props.theme[key];
+const themed = (key) => (props) => props.theme[key];
 
-export const base = compose(
-  () => ({ boxSizing: 'border-box' }),
+const base = compose(
+  () => ({ boxSizing: "border-box" }),
   space,
   width,
   minWidth,
@@ -39,16 +39,18 @@ export const base = compose(
   display
 );
 
-base.propTypes = {
-  ...display.propTypes,
-  ...space.propTypes,
-  ...borders.propTypes,
-  ...borderColor.propTypes,
-  ...width.propTypes,
-  ...height.propTypes,
-  ...fontSize.propTypes,
-  ...color.propTypes,
-  ...flex.propTypes,
-  ...order.propTypes,
-  ...alignSelf.propTypes,
-};
+// base.propTypes = {
+//   ...display.propTypes,
+//   ...space.propTypes,
+//   ...borders.propTypes,
+//   ...borderColor.propTypes,
+//   ...width.propTypes,
+//   ...height.propTypes,
+//   ...fontSize.propTypes,
+//   ...color.propTypes,
+//   ...flex.propTypes,
+//   ...order.propTypes,
+//   ...alignSelf.propTypes,
+// };
+
+export { themed, base };

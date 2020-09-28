@@ -1,9 +1,4 @@
 import React, { Fragment, useState, useEffect } from "react";
-import Link from "next/link";
-import AwesomeSlider from "react-awesome-slider";
-
-import BannerWrapper, { Container } from "./banner.style";
-
 import Slider from "react-animated-slider";
 import "react-animated-slider/build/horizontal.css";
 

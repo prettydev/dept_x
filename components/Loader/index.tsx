@@ -1,22 +1,16 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import LoaderStyle from './loader.style';
+import React from "react";
+import PropTypes from "prop-types";
+import LoaderStyle from "./loader.style";
 
 const Loader = ({ loaderColor, className, ...props }) => {
   // Add all classs to an array
-  const addAllClasses = ['reusecore__loader'];
+  const addAllClasses = ["reusecore__loader"];
 
   // className prop checking
   if (className) {
     addAllClasses.push(className);
   }
-  return (
-    <LoaderStyle
-      className={addAllClasses.join(' ')}
-      loaderColor={loaderColor}
-      {...props}
-    />
-  );
+  return <LoaderStyle className={addAllClasses.join(" ")} {...props} />;
 };
 
 Loader.propTypes = {

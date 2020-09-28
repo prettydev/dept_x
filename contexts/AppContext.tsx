@@ -12,6 +12,7 @@ type ContextProps = {
   fetchLoading: boolean;
   state: {
     cart: Cart;
+    drawerIsOpen: boolean;
   };
 };
 
@@ -26,6 +27,11 @@ const reducer = (state, action) => {
           totalPrice: 0.0,
           ...action.payload,
         },
+      };
+    case "TOGGLE":
+      return {
+        ...state,
+        drawerIsOpen: !state.drawerIsOpen,
       };
     default:
       return state;

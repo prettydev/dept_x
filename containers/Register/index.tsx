@@ -13,7 +13,7 @@ const Register = () => {
             </p>
             <p className="text-2xl">ON LIVE PRINTING T-SHIRT AND TOTE BAG</p>
           </div>
-          <input className="w-3/4 rounded-full h-12 border border-1 border-gray-700" />
+          <input className="w-3/4 rounded-full h-12 border border-1 border-gray-700 px-6" />
           <button className="bg-yellow-500 p-4 w-1/4 text-white font-bold rounded-full">
             SUBMIT
           </button>

@@ -1,23 +1,6 @@
 import React from "react";
-import Link from "next/link";
-import Fade from "../Events/node_modules/react-reveal/Fade";
-import Image from "../../components/Image";
-import Heading from "../../components/Heading";
-import Text from "../../components/Text";
-import SectionWrapper, {
-  Container,
-  ImageWrapper,
-  TextWrapper,
-} from "./aboutUs.style";
-
-import { aboutData } from "../../data";
 
 const AboutUs = () => {
-  const { thumb_url, title, text, text2 } = aboutData;
-  const setTitle = (title) => {
-    return { __html: title };
-  };
-
   return (
     <div
       id="about"

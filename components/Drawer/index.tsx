@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import RcDrawer from "rc-drawer";
 import "rc-drawer/assets/index.css";
@@ -34,7 +34,7 @@ const Drawer = ({
           onClick={toggleHandler}
           style={closeButtonStyle}
           role="button"
-          tabIndex="0"
+          tabIndex={0}
           onKeyPress={() => {}}
         >
           {closeButton}
@@ -46,7 +46,7 @@ const Drawer = ({
         style={{ display: "inline-block" }}
         onClick={toggleHandler}
         role="button"
-        tabIndex="0"
+        tabIndex={0}
         onKeyPress={() => {}}
       >
         {drawerHandler}
