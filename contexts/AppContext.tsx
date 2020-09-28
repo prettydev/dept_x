@@ -56,9 +56,9 @@ export const AppProvider = ({ children }) => {
     },
   });
 
-  if (loading) {
-    return <ScreenLoader />;
-  }
+  // if (loading) {
+  //   return <ScreenLoader />;
+  // }
 
   return (
     <AppContext.Provider

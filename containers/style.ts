@@ -586,12 +586,6 @@ const InteriorWrapper = styled.div`
   }
 `;
 
-const ContentWrapper = styled.div`
-  flex: 1 0 auto;
-  width: 100%;
-  overflow: hidden;
-`;
-
 /* ------------------------------------ */
 // style for section header
 /* ------------------------------------ */
@@ -694,10 +688,4 @@ const CircleLoader = styled.div`
   }
 `;
 
-export {
-  GlobalStyle,
-  InteriorWrapper,
-  ContentWrapper,
-  SectionHeader,
-  CircleLoader,
-};
+export { GlobalStyle, InteriorWrapper, SectionHeader, CircleLoader };

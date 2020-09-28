@@ -31,11 +31,11 @@ function App({ Component, pageProps }: AppProps) {
       </Head>
 
       <CSSReset />
-      <ApolloProvider client={apolloClient}>
-        <AppProvider>
-          <Component {...pageProps} />
-        </AppProvider>
-      </ApolloProvider>
+      {/* <ApolloProvider client={apolloClient}>
+        <AppProvider> */}
+      <Component {...pageProps} />
+      {/* </AppProvider> */}
+      {/* </ApolloProvider> */}
     </ThemeProvider>
   );
 }

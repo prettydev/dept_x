@@ -10,18 +10,38 @@ import Register from "../containers/Register";
 import AboutUs from "../containers/AboutUs";
 import { ResetCSS } from "../assets/css/style";
 
-import {
-  GlobalStyle,
-  InteriorWrapper,
-  ContentWrapper,
-} from "../containers/style";
+import { GlobalStyle, InteriorWrapper } from "../containers/style";
 import ScrollSpyMenu from "../components/ScrollSpyMenu";
-import { menuData } from "../data";
+import { DrawerProvider } from "../contexts/DrawerContext";
+
 import "rc-drawer/assets/index.css";
+
+const menuData = [
+  {
+    label: "HOME",
+    path: "#banner",
+    offset: "80",
+  },
+  {
+    label: "ABOUT US",
+    path: "#about",
+    offset: "80",
+  },
+  {
+    label: "ORDER INSTRUCTION",
+    path: "#events",
+    offset: "80",
+  },
+  {
+    label: "REGISTER",
+    path: "#register",
+    offset: "80",
+  },
+];
 
 const LandingPage = () => {
   return (
-    <AppProvider>
+    <DrawerProvider>
       <ThemeProvider theme={landingTheme}>
         <ResetCSS />
         <GlobalStyle />
@@ -29,23 +49,23 @@ const LandingPage = () => {
           {/* <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
             <Navbar />
           </Sticky> */}
-          <Drawer placement="right">
-            <ScrollSpyMenu
+
+          {/* <Drawer placement="right"> */}
+          {/* <ScrollSpyMenu
               className=""
               menuItems={menuData}
               drawerClose={true}
               offset={-100}
-            />
-          </Drawer>
-          <ContentWrapper>
-            <Banner />
-            <AboutUs />
-            <Events />
-            <Register />
-          </ContentWrapper>
+            /> */}
+          {/* </Drawer> */}
+
+          <Banner key="banner" />
+          <AboutUs key="about" />
+          <Events key="events" />
+          <Register key="register" />
         </InteriorWrapper>
       </ThemeProvider>
-    </AppProvider>
+    </DrawerProvider>
   );
 };
 

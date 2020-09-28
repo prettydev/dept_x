@@ -1,12 +1,15 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import Scrollspy from "react-scrollspy";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
-import { AppContext } from "../../contexts/AppContext";
+import { DrawerContext } from "../../contexts/DrawerContext";
 
 const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
-  const { dispatch } = useContext(AppContext);
+  // const { dispatch } = useContext(DrawerContext);
   // empty array for scrollspy items
+
+  const [drawerIsOpen, setDrawerIsOpen] = useState(false);
+
   const scrollItems = [];
 
   // convert menu path to scrollspy items
@@ -24,9 +27,10 @@ const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
 
   // Close drawer when click on menu item
   const toggleDrawer = () => {
-    dispatch({
-      type: "TOGGLE",
-    });
+    // dispatch({
+    //   type: "TOGGLE",
+    // });
+    setDrawerIsOpen(!drawerIsOpen);
   };
 
   return (
@@ -44,7 +48,7 @@ const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
             <a href={menu.path}>{menu.label}</a>
           ) : (
             <>
-              {drawerClose ? (
+              {/* {drawerClose ? (
                 <AnchorLink
                   href={menu.path}
                   offset={menu.offset}
@@ -52,11 +56,11 @@ const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
                 >
                   {menu.label}
                 </AnchorLink>
-              ) : (
-                <AnchorLink href={menu.path} offset={menu.offset}>
-                  {menu.label}
-                </AnchorLink>
-              )}
+              ) : ( */}
+              <AnchorLink href={menu.path} offset={menu.offset}>
+                {menu.label}
+              </AnchorLink>
+              {/* )} */}
             </>
           )}
         </li>

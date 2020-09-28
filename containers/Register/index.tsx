@@ -22,7 +22,7 @@ const Register = () => {
 
       <div
         style={{
-          background: `url('${require("./banner.svg")}') no-repeat center center`,
+          background: `url('${require("./banner.jpg")}') no-repeat center center`,
           backgroundSize: "cover",
         }}
         className="w-1/2"

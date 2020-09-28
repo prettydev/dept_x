@@ -8,10 +8,10 @@ const AboutUs = () => {
         background: `url('${require("./banner.svg")}') no-repeat center center`,
         backgroundSize: "cover",
       }}
-      className="w-screen h-screen min-h-screen flex"
+      className="w-screen min-h-screen flex"
     >
       <div className="w-1/2 h-full flex">
-        <div className="text-left justify-items-start mx-auto my-auto flex flex-col gap-12 w-3/5">
+        <div className="text-left justify-items-start mx-auto mt-48 flex flex-col gap-12 w-3/5">
           <h1 className="text-black text-4xl mt-8">DEPT_X EVENT</h1>
           <p className="text-xl">
             We will hold the Kanahei's live printing during the Hunger Run.
