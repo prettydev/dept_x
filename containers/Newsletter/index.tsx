@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Icon } from "react-icons-kit";
 import { iosEmailOutline } from "react-icons-kit/ionicons/iosEmailOutline";
-import Fade from "react-reveal/Fade";
+import Fade from "../Events/node_modules/react-reveal/Fade";
 import Heading from "../../components/Heading";
 import Text from "../../components/Text";
 import Button from "../../components/Button";

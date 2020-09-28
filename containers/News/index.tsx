@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Fade from "react-reveal/Fade";
+import Fade from "../Events/node_modules/react-reveal/Fade";
 import Heading from "../../components/Heading";
 import Text from "../../components/Text";
 import SectionWrapper, {

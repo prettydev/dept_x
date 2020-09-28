@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "../Events/node_modules/styled-components";
 import { themeGet } from "@styled-system/theme-get";
 
 import twitterIcon from "../../assets/image/twitter.svg";

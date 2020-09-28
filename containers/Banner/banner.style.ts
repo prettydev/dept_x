@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled, { keyframes } from "../Events/node_modules/styled-components";
 import { themeGet } from "@styled-system/theme-get";
 
 import error from "../../assets/image/error.svg";
@@ -21,7 +21,6 @@ const shake = keyframes`
 const BannerWrapper = styled.div`
   padding-top: 30px;
   margin-bottom: 81px;
-  background-color: ${themeGet("colors.banner", "#171717")};
   @media only screen and (max-width: 1440px) {
     margin-bottom: 60px;
   }

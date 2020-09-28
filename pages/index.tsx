@@ -5,14 +5,9 @@ import { landingTheme } from "../theme";
 import { DrawerProvider } from "../contexts/DrawerContext";
 import Navbar from "../containers/Navbar";
 import Banner from "../containers/Banner";
-import Feature from "../containers/Feature";
+import Events from "../containers/Events";
+import Register from "../containers/Register";
 import AboutUs from "../containers/AboutUs";
-import Project from "../containers/Project";
-import Team from "../containers/Team";
-import News from "../containers/News";
-import Testimonial from "../containers/Testimonial";
-import Gallery from "../containers/Gallery";
-import Footer from "../containers/Footer";
 
 import { ResetCSS } from "../assets/css/style";
 
@@ -40,15 +35,11 @@ const LandingPage = () => {
           </Sticky>
           <ContentWrapper>
             <Banner />
-            <Feature />
             <AboutUs />
-            <Project />
-            <Team />
-            <News />
-            <Testimonial />
-            <Gallery />
+            <Events />
+            <Register />
           </ContentWrapper>
-          <Footer />
+          {/* <Footer /> */}
         </InteriorWrapper>
         {/* End of markup section. */}
       </>

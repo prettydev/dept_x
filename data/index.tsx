@@ -20,7 +20,7 @@
 export const menuData = [
   {
     label: "HOME",
-    path: "#home",
+    path: "#banner",
     offset: "80",
   },
   {
@@ -30,7 +30,7 @@ export const menuData = [
   },
   {
     label: "ORDER INSTRUCTION",
-    path: "#order",
+    path: "#events",
     offset: "80",
   },
   {
@@ -71,41 +71,6 @@ export const bannerData = {
       thumb_url: slide3,
       title: "Corner",
       link: "#1",
-    },
-  ],
-};
-
-/* ------------------------------------ */
-// Feature section data
-/* ------------------------------------ */
-import corporateIcon from "../assets/image/feature/1.svg";
-import landscapeIcon from "../assets/image/feature/2.svg";
-import interiorIcon from "../assets/image/feature/3.svg";
-
-export const featureData = {
-  title: "OUR SERVICES",
-  slogan: "Featured Service that We Provide",
-  features: [
-    {
-      id: 1,
-      icon: corporateIcon,
-      title: "Corporate Design",
-      description:
-        "Corporate design is a crucial part of your brand. Our approach corporate design is extraordinary.",
-    },
-    {
-      id: 2,
-      icon: landscapeIcon,
-      title: "Landscape Design",
-      description:
-        "Learn more about landscape plans, how to design them, what to watch out for in your layout.",
-    },
-    {
-      id: 3,
-      icon: interiorIcon,
-      title: "Interior Design",
-      description:
-        "Discover our design ideas, beautiful photos and how-to projects to create Interior Design.",
     },
   ],
 };

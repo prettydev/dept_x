@@ -1,6 +1,6 @@
 import React, { Fragment, useState, useEffect } from "react";
 import Link from "next/link";
-import Fade from "react-reveal/Fade";
+import Fade from "../Events/node_modules/react-reveal/Fade";
 import Text from "../../components/Text";
 import Heading from "../../components/Heading";
 import Image from "../../components/Image";

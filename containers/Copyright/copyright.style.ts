@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "../Events/node_modules/styled-components";
 
 const CopyrightWrapper = styled.div`
   ul {

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "../Events/node_modules/styled-components";
 
 const SectionWrapper = styled.div`
   padding: 81px 0;
@@ -11,7 +11,6 @@ const SectionWrapper = styled.div`
 `;
 
 export const Container = styled.div`
-  max-width: 1627px;
   margin: 0 auto;
   display: flex;
   align-items: center;
