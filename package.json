@@ -42,7 +42,6 @@
         "react-scrollspy": "^3.4.3",
         "react-stickynode": "^3.0.3",
         "sass": "^1.26.11",
-        "styled-components": "^5.2.0",
         "url-parse": "^1.4.7",
         "validator": "^13.1.1"
     },
