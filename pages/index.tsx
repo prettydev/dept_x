@@ -41,31 +41,25 @@ const menuData = [
 
 const LandingPage = () => {
   return (
-    <DrawerProvider>
-      <ThemeProvider theme={landingTheme}>
-        <ResetCSS />
-        <GlobalStyle />
-        <InteriorWrapper>
-          {/* <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
+    <div className="overflow-hidden flex flex-col min-h-screen overflow-x-hidden">
+      {/* <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
             <Navbar />
           </Sticky> */}
 
-          {/* <Drawer placement="right"> */}
-          {/* <ScrollSpyMenu
+      {/* <Drawer placement="right"> */}
+      {/* <ScrollSpyMenu
               className=""
               menuItems={menuData}
               drawerClose={true}
               offset={-100}
             /> */}
-          {/* </Drawer> */}
+      {/* </Drawer> */}
 
-          <Banner key="banner" />
-          <AboutUs key="about" />
-          <Events key="events" />
-          <Register key="register" />
-        </InteriorWrapper>
-      </ThemeProvider>
-    </DrawerProvider>
+      <Banner key="banner" />
+      <AboutUs key="about" />
+      <Events key="events" />
+      <Register key="register" />
+    </div>
   );
 };
 
