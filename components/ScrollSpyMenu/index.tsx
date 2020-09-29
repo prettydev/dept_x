@@ -57,9 +57,11 @@ const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
                   {menu.label}
                 </AnchorLink>
               ) : ( */}
-              <AnchorLink href={menu.path} offset={menu.offset}>
-                {menu.label}
-              </AnchorLink>
+              <div className="p-4 text-xl">
+                <AnchorLink href={menu.path} offset={menu.offset}>
+                  {menu.label}
+                </AnchorLink>
+              </div>
               {/* )} */}
             </>
           )}

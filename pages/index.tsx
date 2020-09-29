@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { Transition } from "@tailwindui/react";
 import Drawer from "rc-drawer";
 import Sticky from "react-stickynode";
 import { AppProvider } from "../contexts/AppContext";
@@ -10,7 +11,11 @@ import AboutUs from "../containers/AboutUs";
 import ScrollSpyMenu from "../components/ScrollSpyMenu";
 import { DrawerProvider } from "../contexts/DrawerContext";
 
-import "rc-drawer/assets/index.css";
+import { Icon, InlineIcon } from "@iconify/react";
+import menuSharp from "@iconify/icons-ion/menu-sharp";
+import closeIcon from "@iconify/icons-ion/close";
+
+// import "rc-drawer/assets/index.css";
 
 const menuData = [
   {
@@ -36,26 +41,50 @@ const menuData = [
 ];
 
 const LandingPage = () => {
+  const [isOpen, setOpen] = useState(false);
+
   return (
-    <div className="overflow-hidden flex flex-col min-h-screen overflow-x-hidden">
-      {/* <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
-            <Navbar />
-          </Sticky> */}
-
-      {/* <Drawer placement="right"> */}
-      {/* <ScrollSpyMenu
-              className=""
-              menuItems={menuData}
-              drawerClose={true}
-              offset={-100}
-            /> */}
-      {/* </Drawer> */}
-
-      <Banner key="banner" />
-      <AboutUs key="about" />
-      <Events key="events" />
-      <Register key="register" />
-    </div>
+    <>
+      <div className="overflow-hidden flex flex-col min-h-screen overflow-x-hidden">
+        <Banner key="banner" />
+        <AboutUs key="about" />
+        <Events key="events" />
+        <Register key="register" />
+      </div>
+      <button
+        className="fixed top-8 right-8 text-4xl z-10 text-gray-300 hover:text-white transition ease-in-out duration-150"
+        onClick={() => {
+          setOpen(!isOpen);
+        }}
+      >
+        {isOpen ? <Icon icon={closeIcon} /> : <Icon icon={menuSharp} />}
+      </button>
+      <section className="absolute inset-y-0 right-0 max-w-full flex">
+        <Transition
+          show={isOpen}
+          enter="transition ease-out duration-100 transform"
+          enterFrom="opacity-0 scale-95"
+          enterTo="opacity-100 scale-100"
+          leave="transition ease-in duration-75 transform"
+          leaveFrom="opacity-100 scale-100"
+          leaveTo="opacity-0 scale-95"
+        >
+          {(ref) => (
+            <div
+              ref={ref}
+              className="py-auto origin-top-right fixed right-0 w-auto min-h-screen rounded-md shadow-lg bg-white"
+            >
+              <ScrollSpyMenu
+                className="mt-48"
+                menuItems={menuData}
+                drawerClose={true}
+                offset={-100}
+              />
+            </div>
+          )}
+        </Transition>
+      </section>
+    </>
   );
 };
 
