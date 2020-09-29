@@ -1,16 +1,13 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  future: {
-    removeDeprecatedGapUtilities: true,
-    purgeLayersByDefault: true,
-  },
-  purge: [
-    "./*.{ts,tsx}",
-    "./pages/**/*.{ts,tsx}",
-    "./containers/**/*.{ts,tsx}",
-    "./components/**/*.{ts,tsx}",
-  ],
+  // purge: [
+  //   "./*.{ts,tsx}",
+  //   "./pages/**/*.{ts,tsx}",
+  //   "./containers/**/*.{ts,tsx}",
+  //   "./components/**/*.{ts,tsx}",
+  // ],
+  purge: false,
   theme: {
     extend: {
       fontFamily: {
@@ -24,4 +21,8 @@ module.exports = {
       layout: "sidebar",
     }),
   ],
+  future: {
+    removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true,
+  },
 };
