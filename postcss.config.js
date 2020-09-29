@@ -2,8 +2,10 @@ const purgecss = [
   "@fullhuman/postcss-purgecss",
   {
     content: [
-      "./pages/**/*.{js,jsx,ts,tsx}",
-      "./components/**/*.{js,jsx,ts,tsx}",
+      "./*.{ts,tsx}",
+      "./pages/**/*.{ts,tsx}",
+      "./containers/**/*.{ts,tsx}",
+      "./components/**/*.{ts,tsx}",
     ],
     defaultExtractor: (content) => {
       const broadMatches = content.match(/[^<>"'`\\s]*[^<>"'`\\s:]/g) || [];
