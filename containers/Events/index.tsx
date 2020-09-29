@@ -44,8 +44,8 @@ const Events = () => {
         </p>
       </div>
       <div className="flex flex-row justify-around">
-        {events.map((item) => (
-          <div className="text-center flex flex-col gap-8 w-1/5">
+        {events.map((item, idx) => (
+          <div key={idx} className="text-center flex flex-col gap-8 w-1/5">
             <div className="thumbnail">
               <img
                 src={require(`./${item.icon}`)}

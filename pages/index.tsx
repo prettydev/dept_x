@@ -1,16 +1,12 @@
 import React from "react";
 import Drawer from "rc-drawer";
 import Sticky from "react-stickynode";
-import { ThemeProvider } from "styled-components";
-import { landingTheme } from "../theme";
 import { AppProvider } from "../contexts/AppContext";
 import Banner from "../containers/Banner";
 import Events from "../containers/Events";
 import Register from "../containers/Register";
 import AboutUs from "../containers/AboutUs";
-import { ResetCSS } from "../assets/css/style";
 
-import { GlobalStyle, InteriorWrapper } from "../containers/style";
 import ScrollSpyMenu from "../components/ScrollSpyMenu";
 import { DrawerProvider } from "../contexts/DrawerContext";
 
