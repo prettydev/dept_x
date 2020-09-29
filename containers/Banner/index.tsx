@@ -72,7 +72,7 @@ const Banner = () => {
             <div className="text-left justify-items-start mx-auto mt-64 flex flex-col gap-10">
               <p className="text-white text-2xl">OUR e - SHOP</p>
               <h1 className="text-white text-4xl">
-                COMMING SOON<span className="text-yellow-500">_</span>
+                COMMING SOON<span style={{ color: colors.primary }}>_</span>
               </h1>
               <p className="text-white text-xl">www.deptx.com</p>
             </div>
