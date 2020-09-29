@@ -1,4 +1,5 @@
 import React from "react";
+import colors from "../../theme/colors";
 
 const events = [
   {
@@ -53,7 +54,9 @@ const Events = () => {
                 className="mx-auto"
               />
             </div>
-            <h3 className="title text-yellow-500 text-3xl">{item.title}</h3>
+            <h3 className="title text-3xl" style={{ color: colors.primary }}>
+              {item.title}
+            </h3>
             <p className="excerpt text-white w-3/4 mx-auto">
               {item.description}
             </p>

@@ -13,7 +13,7 @@ const colors = {
   border: "#dadada",
   black: "#000000",
   white: "#ffffff",
-  primary: "#FDEF00",
+  primary: "#FFD433",
   heading: "#191919",
   heading3: "#273343",
   quote: "#343d48",

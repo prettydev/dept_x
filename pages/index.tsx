@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { Transition } from "@tailwindui/react";
-import Drawer from "rc-drawer";
-import Sticky from "react-stickynode";
 import { AppProvider } from "../contexts/AppContext";
 import Banner from "../containers/Banner";
 import Events from "../containers/Events";
@@ -9,34 +7,27 @@ import Register from "../containers/Register";
 import AboutUs from "../containers/AboutUs";
 
 import ScrollSpyMenu from "../components/ScrollSpyMenu";
-import { DrawerProvider } from "../contexts/DrawerContext";
 
 import { Icon, InlineIcon } from "@iconify/react";
 import menuSharp from "@iconify/icons-ion/menu-sharp";
 import closeIcon from "@iconify/icons-ion/close";
 
-// import "rc-drawer/assets/index.css";
-
 const menuData = [
   {
     label: "HOME",
     path: "#banner",
-    offset: "80",
   },
   {
     label: "ABOUT US",
     path: "#about",
-    offset: "80",
   },
   {
     label: "ORDER INSTRUCTION",
     path: "#events",
-    offset: "80",
   },
   {
     label: "REGISTER",
     path: "#register",
-    offset: "80",
   },
 ];
 
@@ -79,7 +70,6 @@ const LandingPage = () => {
                 className="mt-48 text-white ml-8"
                 menuItems={menuData}
                 drawerClose={true}
-                offset={-100}
               />
             </div>
           )}

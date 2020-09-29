@@ -1,4 +1,5 @@
 import React from "react";
+import colors from "../../theme/colors";
 
 const AboutUs = () => {
   return (
@@ -40,7 +41,10 @@ const AboutUs = () => {
               <td>{new Date().toLocaleDateString()}</td>
             </tr>
           </table>
-          <button className="bg-yellow-500 p-4 w-1/3 text-white font-bold rounded-full">
+          <button
+            className="p-4 w-1/3 text-white font-bold rounded-full"
+            style={{ backgroundColor: colors.primary }}
+          >
             REGISTER NOW
           </button>
         </div>

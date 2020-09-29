@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import colors from "../../theme/colors";
 import "./banner.module.scss";
 
 const Banner = () => {
@@ -39,8 +40,8 @@ const Banner = () => {
               <div className="flex flex-col gap-12">
                 <div>
                   <h1 className="text-white text-4xl mt-8">
-                    GET <span className="text-yellow-500">10% OFF</span> IN
-                    KANAHEI
+                    GET <span style={{ color: colors.primary }}>10% OFF</span>{" "}
+                    IN KANAHEI
                   </h1>
                   <p className="text-white text-2xl ">
                     LIVE PRINTING T-SHIRT AND TOTE BAG DON'T MISS OUT!
@@ -49,7 +50,10 @@ const Banner = () => {
                 <p className="text-white text-xl">
                   CREATE YOUR OWN KANAHEI FAVOUR
                 </p>
-                <button className="bg-yellow-500 p-4 w-1/4 text-white font-bold rounded-full">
+                <button
+                  className="p-4 w-1/4 text-white font-bold rounded-full"
+                  style={{ backgroundColor: colors.primary }}
+                >
                   REGISTER NOW
                 </button>
               </div>
