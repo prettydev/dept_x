@@ -32,32 +32,40 @@ const Banner = () => {
             background: `url('${require("./banner1.jpg")}') no-repeat center center`,
             backgroundSize: "cover",
           }}
-          className="my-slide primary min-h-screen"
+          className="my-slide primary min-h-screen flex flex-col sm:flex-row"
         >
-          <div className="w-1/2 h-full text-center flex">
-            <div className="text-left justify-items-start mx-auto flex flex-col gap-12 mt-48">
+          <div className="w-full sm:w-1/2  h-full text-center flex">
+            <div className="text-left justify-items-start mx-auto flex flex-col gap-8 sm:gap-12 mt-36 sm:mt-48 w-3/4">
               <img src={require("./logo.svg")} />
               <div className="flex flex-col gap-12">
                 <div>
-                  <h1 className="text-white text-4xl mt-8">
+                  <h1 className="text-white text-2xl font-bold sm:text-4xl sm:font-medium mt-8">
                     GET <span style={{ color: colors.primary }}>10% OFF</span>{" "}
                     IN KANAHEI
                   </h1>
-                  <p className="text-white text-2xl ">
+                  <p className="text-white text-xl sm:text-2xl ">
                     LIVE PRINTING T-SHIRT AND TOTE BAG DON'T MISS OUT!
                   </p>
                 </div>
-                <p className="text-white text-xl">
+                <p className="text-white text-lg sm:text-xl">
                   CREATE YOUR OWN KANAHEI FAVOUR
                 </p>
-                <button
-                  className="p-4 w-1/4 text-white font-bold rounded-full"
-                  style={{ backgroundColor: colors.primary }}
-                >
-                  REGISTER NOW
-                </button>
+                <div className="text-center sm:text-left">
+                  <button
+                    className="p-4 w-2/3 sm:w-1/3 text-white font-bold rounded-full"
+                    style={{ backgroundColor: colors.primary }}
+                  >
+                    REGISTER NOW
+                  </button>
+                </div>
               </div>
             </div>
+          </div>
+          <div className="w-full sm:w-1/2  h-full text-center flex">
+            <img
+              src={require("./mobile.png")}
+              className="h-screen object-contain"
+            />
           </div>
         </div>
         <div
@@ -68,7 +76,7 @@ const Banner = () => {
           }}
           className="my-slide secondary min-h-screen"
         >
-          <div className="w-1/2 h-full text-center flex">
+          <div className="w-full sm:w-1/2 h-full text-center flex">
             <div className="text-left justify-items-start mx-auto mt-64 flex flex-col gap-10">
               <p className="text-white text-2xl">OUR e - SHOP</p>
               <h1 className="text-white text-4xl">

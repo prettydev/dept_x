@@ -11,8 +11,8 @@ const AboutUs = () => {
       }}
       className="w-screen min-h-screen flex"
     >
-      <div className="w-1/2 h-full flex">
-        <div className="text-left justify-items-start mx-auto mt-48 flex flex-col gap-12 w-3/5">
+      <div className="w-full sm:w-1/2 h-full flex">
+        <div className="text-left justify-items-start mx-auto mt-24 sm:mt-48 flex flex-col gap-12 w-4/5 sm:w-3/5">
           <h1 className="text-black text-4xl mt-8">DEPT_X EVENT</h1>
           <p className="text-xl">
             We will hold the Kanahei's live printing during the Hunger Run.
@@ -41,12 +41,14 @@ const AboutUs = () => {
               <td>{new Date().toLocaleDateString()}</td>
             </tr>
           </table>
-          <button
-            className="p-4 w-1/3 text-white font-bold rounded-full"
-            style={{ backgroundColor: colors.primary }}
-          >
-            REGISTER NOW
-          </button>
+          <div className="text-center sm:text-left">
+            <button
+              className="p-4 w-2/3 sm:w-1/3 text-white font-bold rounded-full"
+              style={{ backgroundColor: colors.primary }}
+            >
+              REGISTER NOW
+            </button>
+          </div>
         </div>
       </div>
     </div>

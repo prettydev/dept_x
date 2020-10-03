@@ -44,20 +44,26 @@ const Events = () => {
           printing order:
         </p>
       </div>
-      <div className="flex flex-row justify-around">
+      <div className="flex flex-wrap justify-around">
         {events.map((item, idx) => (
-          <div key={idx} className="text-center flex flex-col gap-8 w-1/5">
-            <div className="thumbnail">
+          <div
+            key={idx}
+            className="text-center flex flex-col gap-2 sm:gap-8 w-1/2 sm:w-1/5"
+          >
+            <div className="thumbnail w-7/12 mx-auto">
               <img
                 src={require(`./${item.icon}`)}
                 alt={item.title}
                 className="mx-auto"
               />
             </div>
-            <h3 className="title text-3xl" style={{ color: colors.primary }}>
+            <h3
+              className="title text-xl sm:text-3xl"
+              style={{ color: colors.primary }}
+            >
               {item.title}
             </h3>
-            <p className="excerpt text-white w-3/4 mx-auto">
+            <p className="excerpt text-white w-5/6 sm:w-3/4 mx-auto">
               {item.description}
             </p>
           </div>

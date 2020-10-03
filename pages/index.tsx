@@ -63,11 +63,11 @@ const LandingPage = () => {
           {(ref) => (
             <div
               ref={ref}
-              className="py-auto origin-top-right fixed right-0 w-80 min-h-screen rounded-md shadow-lg"
-              style={{ backgroundColor: "#4B4B4B" }}
+              className="py-auto origin-top-right fixed right-0 sm:w-80 min-h-screen rounded-md shadow-lg"
+              style={{ backgroundColor: "#4B4B4BDD" }}
             >
               <ScrollSpyMenu
-                className="mt-48 text-white ml-8"
+                className="mt-24 sm:mt-48 text-white ml-2 sm:ml-8"
                 menuItems={menuData}
                 drawerClose={true}
               />

@@ -28,7 +28,7 @@ const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
           {menu.staticLink ? (
             <a href={menu.path}>{menu.label}</a>
           ) : (
-            <div className="p-4 text-xl">
+            <div className="p-4 sm:text-xl">
               <AnchorLink href={menu.path} offset={0}>
                 {menu.label}
               </AnchorLink>
