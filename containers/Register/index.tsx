@@ -34,7 +34,7 @@ const Register = () => {
       id="register"
       className="min-h-screen flex flex-col-reverse sm:flex-row"
     >
-      <div className="flex-auto w-full sm:w-1/2">
+      <div className="flex-grow w-full sm:w-1/2 my-auto">
         <FormArea />
       </div>
       <div
