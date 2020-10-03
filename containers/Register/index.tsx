@@ -3,7 +3,7 @@ import colors from "../../theme/colors";
 
 const FormArea = () => {
   return (
-    <div className="w-4/5 sm:w-3/5 mx-auto my-auto flex flex-col gap-12">
+    <div className="w-4/5 sm:w-3/5 mx-auto my-auto flex flex-col gap-8 sm:gap-12">
       <h1 className="text-3xl sm:text-4xl mt-8 text-center sm:text-left">
         E-MAIL REGISTER
       </h1>
@@ -34,7 +34,7 @@ const Register = () => {
       id="register"
       className="min-h-screen flex flex-col-reverse sm:flex-row"
     >
-      <div className="flex h-1/2 sm:h-auto w-full sm:w-1/2">
+      <div className="flex h-1/3 sm:h-auto w-full sm:w-1/2">
         <FormArea />
       </div>
       <div
@@ -42,7 +42,7 @@ const Register = () => {
           background: `url('${require("./banner.jpg")}') no-repeat center center`,
           backgroundSize: "cover",
         }}
-        className=" flex-auto h-1/2 sm:h-auto w-full sm:w-1/2"
+        className=" flex-auto h-2/3 sm:h-auto w-full sm:w-1/2"
       ></div>
     </div>
   );
