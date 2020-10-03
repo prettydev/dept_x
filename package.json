@@ -17,6 +17,7 @@
         "@styled-system/theme-get": "^5.1.2",
         "@tailwindcss/ui": "^0.6.2",
         "@tailwindui/react": "^0.1.1",
+        "autoprefixer": "^10.0.1",
         "cross-env": "^7.0.2",
         "dotenv": "^8.2.0",
         "emotion-theming": "^10.0.27",
