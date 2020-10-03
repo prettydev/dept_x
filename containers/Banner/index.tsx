@@ -34,8 +34,8 @@ const Banner = () => {
           }}
           className="my-slide primary min-h-screen flex flex-col sm:flex-row"
         >
-          <div className="w-full sm:w-1/2  h-full text-center flex">
-            <div className="text-left justify-items-start mx-auto flex flex-col gap-8 sm:gap-12 mt-36 sm:mt-48 w-3/4">
+          <div className="w-full sm:w-1/2 h-full text-center flex">
+            <div className="text-left justify-items-start mx-auto sm:ml-48 flex flex-col gap-8 sm:gap-12 mt-32 sm:mt-48 w-3/4">
               <img src={require("./logo.svg")} />
               <div className="flex flex-col gap-12">
                 <div>
